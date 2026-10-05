@@ -1,0 +1,13 @@
+; Send ASCII bytes to the terminal at 0xF0.
+LDI R0, 72
+ST R0, 0xF0
+LDI R0, 69
+ST R0, 0xF0
+LDI R0, 76
+ST R0, 0xF0
+ST R0, 0xF0
+LDI R0, 79
+ST R0, 0xF0
+LDI R0, 10
+ST R0, 0xF0
+HLT

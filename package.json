@@ -1,0 +1,1 @@
+{"name":"nand-lab","version":"1.0.0","private":true,"type":"module","description":"An original NAND-derived 8-bit computer and browser workbench","scripts":{"start":"python3 -m http.server 8000 --bind 127.0.0.1","test":"node --test","check":"node --check src/app.js && node --test"},"engines":{"node":">=20"}}
