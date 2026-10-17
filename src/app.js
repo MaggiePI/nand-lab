@@ -36,7 +36,6 @@ function start(){if(cpu.halted)return;timer=setInterval(()=>{cpu.step();if(cpu.h
 $('run').onclick=()=>{if(timer){stop();render();}else start();};$('speed').oninput=()=>{if(timer){stop();start();}};
 $('inputForm').onsubmit=e=>{e.preventDefault();cpu.enqueue($('keyboard').value);$('keyboard').value='';render();};
 $('download').onclick=()=>{const url=URL.createObjectURL(new Blob([$ ('source').value],{type:'text/plain'}));const a=document.createElement('a');a.href=url;a.download='program.asm';a.click();URL.revokeObjectURL(url);};
-$('help').onclick=()=>$('helpDialog').showModal();$('closeHelp').onclick=()=>$('helpDialog').close();
 function gate(){const op=$('gate').value,a=Number($('a').checked),b=Number($('b').checked),s=Number($('sel').checked);const fn=(a,b,t)=>op==='NOT'?logic.not(a,t):op==='MUX'?logic.mux(a,b,s,t):logic[op.toLowerCase()](a,b,t);const t={gates:0};const out=fn(a,b,t);$('gateOutput').textContent=`OUT ${out} · ${t.gates} NANDs`;$('truth').innerHTML=`<table><thead><tr><th>A</th><th>B</th><th>${op==='MUX'?`Select = ${s}`:op}</th></tr></thead><tbody>${[0,1].flatMap(x=>[0,1].map(y=>`<tr class="${x===a&&y===b?'highlight':''}"><td>${x}</td><td>${y}</td><td>${fn(x,y)}</td></tr>`)).join('')}</tbody></table>`;}
 for(const id of ['gate','a','b','sel'])$(id).onchange=gate;
 compile();gate();

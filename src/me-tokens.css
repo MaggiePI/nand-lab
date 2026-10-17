@@ -1,0 +1,41 @@
+/* ME brand tokens. Fonts: Archivo, Source Serif 4, IBM Plex Mono (Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap");
+:root {
+  --paper: #fafaf8;
+  --paper-2: #f0f0ec;
+  --ink: #0b0b0c;
+  --ink-muted: #55555a;
+  --rule: #d6d6d1;
+  --signal: #1d4e63;
+  --on-signal: #fafaf8;
+  --inverse: #0b0b0c;
+  --on-inverse: #fafaf8;
+  --focus: #0b0b0c;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+  --space-7: 104px;
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius-full: 9999px;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+  --paper: #0e0e0f;
+  --paper-2: #18181a;
+  --ink: #f2f2ef;
+  --ink-muted: #a3a3a0;
+  --rule: #2e2e31;
+  --signal: #7db8cf;
+  --on-signal: #0b0b0c;
+  --inverse: #f2f2ef;
+  --on-inverse: #0e0e0f;
+  --focus: #7db8cf;
+  }
+}

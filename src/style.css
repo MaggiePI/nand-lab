@@ -1,1 +1,457 @@
-:root{color-scheme:dark;--bg:#101718;--panel:#182123;--edge:#2c383a;--text:#e3ece9;--muted:#99aca8;--accent:#c4f181;--orange:#f6bb7e}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,sans-serif}button,input,select,textarea{font:inherit}button,select,input{border:1px solid var(--edge);background:#202c2e;color:var(--text);border-radius:6px;padding:8px 12px}button{cursor:pointer}button:hover{border-color:var(--accent)}button:disabled{opacity:.45;cursor:default}.primary{background:var(--accent);color:#172119;font-weight:700}header{display:flex;align-items:center;gap:24px;padding:22px 4%;border-bottom:1px solid var(--edge)}.brand{display:flex;gap:12px;align-items:center;letter-spacing:2px}.brand small{display:block;letter-spacing:0;color:var(--muted)}.mark{display:grid;place-items:center;width:40px;height:40px;background:var(--accent);color:var(--bg);font-size:24px;font-weight:900;border-radius:8px}.badge{margin-left:auto;color:var(--muted);font-size:11px;letter-spacing:2px}main{max-width:1700px;margin:auto;padding:32px 4%}.intro{position:relative;max-width:800px;margin-bottom:28px}.eyebrow{font-size:11px;letter-spacing:3px;color:var(--accent)}h1{font-size:clamp(30px,4vw,48px);line-height:1.08;letter-spacing:-1.8px;margin:12px 0}.intro>p:last-child{max-width:610px;color:var(--muted);font-size:16px}.toolbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:20px}.toolbar label{display:flex;align-items:center;gap:8px;color:var(--muted)}input[type=range]{width:95px;padding:0;accent-color:var(--accent)}#status{margin-left:auto;color:var(--accent)}.workspace{display:grid;grid-template-columns:minmax(240px,.9fr) minmax(380px,1.55fr) minmax(260px,1fr);gap:16px;align-items:start}.panel{background:var(--panel);border:1px solid var(--edge);border-radius:10px;overflow:hidden;margin-bottom:16px}.panelhead{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 16px;border-bottom:1px solid var(--edge)}h2{font-size:12px;margin:0;letter-spacing:1px;font-weight:600}.panelhead span,.panelhead button{font-size:10px;color:var(--muted)}textarea{display:block;width:100%;height:440px;resize:vertical;border:0;outline:0;background:#141d1f;color:#d0eab3;font:13px/1.7 ui-monospace,monospace;padding:18px;tab-size:2}textarea:focus{box-shadow:inset 0 0 0 1px var(--accent)}#error{color:var(--orange);padding:0 16px;white-space:pre-wrap}.listing{max-height:300px;overflow:auto}.row{padding:5px 12px;border-bottom:1px solid #233032;font:11px/1.6 ui-monospace,monospace;white-space:pre-wrap}.row.active{background:#30432c;color:var(--accent)}svg{width:100%;padding:16px}svg rect{fill:#202c2e;stroke:#556667;rx:8}svg text{fill:var(--text);text-anchor:middle;font:11px ui-monospace,monospace}svg g.active rect{stroke:var(--accent);fill:#30432c;stroke-width:2}.caption{fill:var(--muted);font-size:10px}.activity{min-height:44px;padding:0 18px;color:var(--accent);font:12px/1.6 ui-monospace,monospace}.registers{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 16px 16px}.register{padding:9px;background:#111b1c;border-radius:6px;font:12px ui-monospace,monospace}.register b{display:block;color:var(--accent);font-size:21px;margin:5px 0}.register small{color:var(--muted);font-size:10px}.counters{padding:12px 16px;border-top:1px solid var(--edge);font:11px ui-monospace,monospace;color:var(--muted)}.muted{color:var(--muted);padding:0 16px;font-size:12px}.gatecontrols{display:flex;align-items:center;gap:14px;padding:16px;flex-wrap:wrap}.gatecontrols label{display:flex;gap:4px;align-items:center}.gatecontrols strong{color:var(--accent)}table{border-collapse:collapse;width:100%;font:11px ui-monospace,monospace;text-align:center}td,th{padding:7px;border-top:1px solid var(--edge)}th{color:var(--muted)}tr.highlight{color:var(--accent);background:#26372a}canvas{display:block;width:calc(100% - 32px);height:auto;margin:16px;image-rendering:pixelated;border:1px solid var(--edge);border-radius:6px}#terminal{white-space:pre-wrap;overflow:auto;margin:16px;padding:12px;background:#101718;min-height:80px;max-height:160px;color:var(--accent)}form{display:flex;gap:6px;padding:0 16px 12px}form input{width:100%;min-width:0}#queued{display:block;padding:0 16px 12px;color:var(--muted)}.memory{display:grid;grid-template-columns:repeat(16,1fr);padding:10px;gap:1px}.memory button{font:9px ui-monospace,monospace;border:0;border-radius:2px;padding:4px 0;color:var(--muted)}.memory button.nonzero{color:var(--text);background:#314144}.memory button.pc{background:var(--accent);color:#101718}.memory button.io{outline:1px solid #685540}#trace{max-height:235px;overflow:auto}footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:16px 0;color:var(--muted);font-size:11px}a{color:var(--accent)}dialog{background:var(--panel);color:var(--text);border:1px solid var(--edge);border-radius:12px;max-width:580px;padding:28px}dialog::backdrop{background:#000b}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}@media(max-width:1150px){.workspace{grid-template-columns:1fr 1.4fr}.right{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.right>.panel{min-width:0}}@media(max-width:760px){header{padding:16px}.badge{display:none}header>button{margin-left:auto}.workspace{display:block}.right{display:block}main{padding:22px 16px}.toolbar #status{width:100%;margin:0}.toolbar label{display:none}textarea{height:300px}}
+@import "me-tokens.css";
+
+/* ─────────────────────────────────────────────────────────────────
+   Pin to ME light tokens — clean, high-contrast, works at any time.
+   ───────────────────────────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+  /* ME light token set */
+  --paper:      #fafaf8;
+  --paper-2:    #f0f0ec;
+  --ink:        #0b0b0c;
+  --ink-muted:  #55555a;
+  --rule:       #d6d6d1;
+  --signal:     #1d4e63;
+  --on-signal:  #fafaf8;
+  --inverse:    #0b0b0c;
+  --on-inverse: #fafaf8;
+  --focus:      #0b0b0c;
+
+  /* App-local supplements — not in the ME palette */
+  --panel-edge:  var(--rule);    /* #d6d6d1 — clearly visible on paper/paper-2  */
+  --panel-head:  #e6e6e2;        /* slightly darker than paper-2, marks headers  */
+  --signal-tint: #daedf5;        /* light petrol tint for active rows/highlights */
+  --error:       #b03a2e;        /* error/warning text — no ME equivalent        */
+  --io-outline:  var(--ink-muted);
+}
+
+/* ── Reset ────────────────────────────────────────────────────── */
+* { box-sizing: border-box }
+
+/* ── Base ─────────────────────────────────────────────────────── */
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 15px/1.5 var(--font-display);
+}
+button, input, select, textarea { font: inherit }
+button, select, input {
+  border: 1px solid var(--panel-edge);
+  background: var(--paper-2);
+  color: var(--ink);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
+button { cursor: pointer }
+button:hover { border-color: var(--signal) }
+button:disabled { opacity: .45; cursor: default }
+.primary {
+  background: var(--signal);
+  color: var(--on-signal);
+  font-weight: 700;
+  border-color: var(--signal);
+}
+
+/* ── Header ───────────────────────────────────────────────────── */
+header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: 22px 4%;
+  background: var(--panel-head);
+  border-bottom: 1px solid var(--panel-edge);
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  letter-spacing: 2px;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+.brand small {
+  display: block;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+.mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--signal);
+  color: var(--on-signal);
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 0;
+}
+.badge {
+  margin-left: auto;
+  color: var(--ink-muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+/* ── Main ─────────────────────────────────────────────────────── */
+main { max-width: 1700px; margin: auto; padding: 32px 4% }
+
+.intro { position: relative; max-width: 800px; margin-bottom: var(--space-4) }
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--signal);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(30px,4vw,48px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin: 12px 0;
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.intro > p:last-child {
+  max-width: 610px;
+  color: var(--ink-muted);
+  font-size: 16px;
+}
+
+/* ── Toolbar ──────────────────────────────────────────────────── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+.toolbar label { display: flex; align-items: center; gap: 8px; color: var(--ink-muted) }
+input[type=range] { width: 95px; padding: 0; accent-color: var(--signal) }
+#status { margin-left: auto; color: var(--signal); font-family: var(--font-mono); font-size: 13px }
+
+/* ── Workspace grid ───────────────────────────────────────────── */
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(240px,.9fr) minmax(380px,1.55fr) minmax(260px,1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+/* ── Panel ────────────────────────────────────────────────────── */
+.panel {
+  background: var(--paper-2);
+  border: 1px solid var(--panel-edge);
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.panelhead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px 16px;
+  background: var(--panel-head);
+  border-bottom: 1px solid var(--panel-edge);
+}
+h2 {
+  font-size: 11px;
+  margin: 0;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.panelhead span {
+  font-size: 10px;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+}
+.panelhead > button {
+  font-size: 10px;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  border-color: var(--rule);
+  background: transparent;
+  padding: 3px 8px;
+}
+.panelhead > button:hover { border-color: var(--signal); color: var(--signal) }
+
+/* ── Assembly textarea ────────────────────────────────────────── */
+textarea {
+  display: block;
+  width: 100%;
+  height: 440px;
+  resize: vertical;
+  border: 0;
+  outline: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 13px/1.7 var(--font-mono);
+  padding: 18px;
+  tab-size: 2;
+}
+textarea:focus { box-shadow: inset 0 0 0 1px var(--signal) }
+
+#error {
+  color: var(--error);
+  padding: 0 16px;
+  white-space: pre-wrap;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+/* ── Machine code listing ─────────────────────────────────────── */
+.listing { max-height: 300px; overflow: auto }
+.row {
+  padding: 5px 12px;
+  border-bottom: 1px solid var(--rule);
+  font: 11px/1.6 var(--font-mono);
+  white-space: pre-wrap;
+  color: var(--ink);
+}
+.row.active { background: var(--signal-tint); color: var(--signal) }
+
+/* ── SVG datapath ─────────────────────────────────────────────── */
+svg { width: 100%; padding: 16px }
+svg g.wires { stroke: var(--ink-muted) }
+#arrow path { fill: var(--ink-muted) }
+svg rect { fill: var(--paper); stroke: var(--panel-edge); rx: 0 }
+svg text { fill: var(--ink); text-anchor: middle; font: 11px var(--font-mono) }
+svg g.active rect { stroke: var(--signal); fill: var(--signal-tint); stroke-width: 2 }
+.caption { fill: var(--ink-muted); font-size: 10px }
+
+/* ── Activity bar ─────────────────────────────────────────────── */
+.activity {
+  min-height: 44px;
+  padding: 0 18px;
+  color: var(--signal);
+  font: 12px/1.6 var(--font-mono);
+}
+
+/* ── Registers ────────────────────────────────────────────────── */
+.registers {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 8px;
+  padding: 0 16px 16px;
+}
+.register {
+  padding: 9px;
+  background: var(--paper);
+  border: 1px solid var(--panel-edge);
+  border-radius: 0;
+  font: 12px var(--font-mono);
+}
+.register b { display: block; color: var(--signal); font-size: 21px; margin: 5px 0 }
+.register small { color: var(--ink-muted); font-size: 10px }
+.counters {
+  padding: 12px 16px;
+  border-top: 1px solid var(--panel-edge);
+  font: 11px var(--font-mono);
+  color: var(--ink-muted);
+}
+
+/* ── Misc ─────────────────────────────────────────────────────── */
+.muted { color: var(--ink-muted); padding: 0 16px; font-size: 12px }
+
+/* ── Gate playground ──────────────────────────────────────────── */
+.gatecontrols { display: flex; align-items: center; gap: 14px; padding: 16px; flex-wrap: wrap }
+.gatecontrols label { display: flex; gap: 4px; align-items: center }
+.gatecontrols strong { color: var(--signal); font-family: var(--font-mono) }
+
+/* ── Truth table ──────────────────────────────────────────────── */
+table { border-collapse: collapse; width: 100%; font: 11px var(--font-mono); text-align: center }
+td, th { padding: 7px; border-top: 1px solid var(--rule) }
+th { color: var(--ink-muted) }
+tr.highlight { color: var(--signal); background: var(--signal-tint) }
+
+/* ── Output canvas & terminal ─────────────────────────────────── */
+canvas {
+  display: block;
+  width: calc(100% - 32px);
+  height: auto;
+  margin: 16px;
+  image-rendering: pixelated;
+  border: 1px solid var(--panel-edge);
+  border-radius: 0;
+}
+#terminal {
+  white-space: pre-wrap;
+  overflow: auto;
+  margin: 16px;
+  padding: 12px;
+  background: var(--paper);
+  min-height: 80px;
+  max-height: 160px;
+  color: var(--signal);
+  font: 13px/1.5 var(--font-mono);
+  border: 1px solid var(--panel-edge);
+}
+form { display: flex; gap: 6px; padding: 0 16px 12px }
+form input { width: 100%; min-width: 0 }
+#queued { display: block; padding: 0 16px 12px; color: var(--ink-muted); font-family: var(--font-mono); font-size: 11px }
+
+/* ── Memory grid ──────────────────────────────────────────────── */
+.memory { display: grid; grid-template-columns: repeat(16,1fr); padding: 10px; gap: 1px }
+.memory button {
+  font: 9px var(--font-mono);
+  border: 0;
+  border-radius: 0;
+  padding: 4px 0;
+  color: var(--ink-muted);
+  background: var(--paper-2);
+}
+.memory button.nonzero { color: var(--ink); background: var(--paper) }
+.memory button.pc { background: var(--signal); color: var(--on-signal) }
+.memory button.io { outline: 1px solid var(--io-outline) }
+
+/* ── Trace ────────────────────────────────────────────────────── */
+#trace { max-height: 235px; overflow: auto }
+
+/* ── Footer ───────────────────────────────────────────────────── */
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 0;
+  color: var(--ink-muted);
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+a { color: var(--signal) }
+
+/* ── Focus ring ───────────────────────────────────────────────── */
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ── Tabs (CSS-only, radio-input driven) ─────────────────────── */
+input[name="tab"] { display: none }
+
+.tab-nav {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--panel-edge);
+  margin-bottom: 24px;
+}
+.tab-nav label {
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  user-select: none;
+}
+.tab-nav label:hover { color: var(--ink) }
+
+/* Active tab label */
+#t-lab:checked   ~ .tab-nav label[for="t-lab"],
+#t-guide:checked ~ .tab-nav label[for="t-guide"],
+#t-about:checked ~ .tab-nav label[for="t-about"] {
+  color: var(--signal);
+  border-bottom-color: var(--signal);
+}
+
+/* Show only the active panel */
+.tab-panel { display: none }
+#t-lab:checked   ~ #panel-lab   { display: block }
+#t-guide:checked ~ #panel-guide { display: block }
+#t-about:checked ~ #panel-about { display: block }
+
+/* Lab tab — toolbar sits above the 3-column workspace */
+#panel-lab .toolbar { margin-bottom: 16px }
+
+/* Guide tab — intro text then tools side by side */
+.guide-intro {
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+.guide-intro h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  color: var(--ink);
+}
+.guide-intro p {
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0 0 12px;
+  color: var(--ink-muted);
+}
+.guide-intro p b { color: var(--ink) }
+.guide-tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* About tab — readable article width */
+.arch {
+  max-width: 640px;
+  padding: 4px 0 40px;
+}
+.arch h3 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin: 0 0 20px;
+  color: var(--ink);
+}
+.arch p {
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0 0 16px;
+  color: var(--ink-muted);
+}
+.arch p:last-child { margin-bottom: 0 }
+.arch p b { color: var(--ink) }
+
+/* ── Responsive: tablet ───────────────────────────────────────── */
+@media (max-width: 1150px) {
+  .workspace { grid-template-columns: 1fr 1.4fr }
+  .right {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+  }
+  .right > .panel { min-width: 0 }
+  .guide-tools { grid-template-columns: 1fr }
+}
+
+/* ── Responsive: phone ────────────────────────────────────────── */
+@media (max-width: 760px) {
+  header { padding: 16px }
+  .badge { display: none }
+  main { padding: 22px var(--space-3) }
+  .tab-nav label { padding: 10px 12px; font-size: 10px }
+  .workspace { display: block }
+  .right { display: block }
+  .guide-tools { grid-template-columns: 1fr }
+  .toolbar #status { width: 100%; margin: 0 }
+  .toolbar label { display: none }
+  textarea { height: 300px }
+}
